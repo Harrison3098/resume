@@ -1,0 +1,7 @@
+# 忽略的目录和文件
+node_modules
+.build
+dist
+.next
+package-lock.json
+yarn.lock
