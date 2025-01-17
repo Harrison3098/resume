@@ -1,27 +1,27 @@
 import { cn } from '@/lib/utils';
-import { Facebook, Linkedin, Twitter, ExternalLink } from 'lucide-react';
+import { Github, Smartphone, MessageCircleMore, AtSign } from 'lucide-react';
 import Link from 'next/link';
 
 const links = [
   {
-    name: 'Facebook',
-    link: 'https://www.facebook.com/shahina.khatun.1044',
-    icon: <Facebook className="size-[24px]" />,
+    name: 'WeChat',
+    link: 'https://weixin.qq.com',
+    icon: <MessageCircleMore className="size-[24px]" />,
   },
   {
-    name: 'Twitter',
-    link: 'https://twitter.com/Taquiimam14',
-    icon: <Twitter className="size-[24px]" />,
+    name: 'Smartphone',
+    link: 'https://www.10086.cn',
+    icon: <Smartphone className="size-[24px]" />,
   },
   {
-    name: 'Linkedin',
-    link: 'https://www.linkedin.com/in/taqui-imam',
-    icon: <Linkedin className="size-[24px]" />,
+    name: 'Email',
+    link: 'https://outlook.live.com/mail/?authredirect=true',
+    icon: <AtSign className="size-[24px]" />,
   },
   {
-    name: 'External',
-    link: 'https://tinyurl.com/MdTaquiImam',
-    icon: <ExternalLink className="size-[24px]" />,
+    name: 'Github',
+    link: 'https://github.com/Harrison3098',
+    icon: <Github className="size-[24px]" />,
   },
 ];
 
