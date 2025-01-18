@@ -1,7 +1,7 @@
 import DateLine from '@/components/DateLine';
 import H2Title from '@/components/H2Title';
 import Badge from '@/ui/Badge';
-import { Lightbulb } from 'lucide-react';
+import { School } from 'lucide-react';
 
 const courses = [
   {
@@ -23,7 +23,7 @@ const courses = [
 const Page = () => {
   return (
     <div className="space-y-4 w-full">
-      <Badge icon={<Lightbulb className="size-5" />} text="教育背景" />
+      <Badge icon={<School className="size-5" />} text="教育背景" />
       <H2Title>我的求学历程</H2Title>
 
       {courses
