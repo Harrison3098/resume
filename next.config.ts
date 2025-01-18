@@ -1,11 +1,15 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
+
+const isPRO = process.env.NODE_ENV === 'production';
+const warehouseName = 'resume';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: "export",
-  assetPrefix: "/resume/", // 替换为你的 GitHub 仓库名称
+  output: 'export',
+  assetPrefix: isPRO ? `/${warehouseName}` : '',
+  basePath: isPRO ? `/${warehouseName}` : '',
   images: {
-    unoptimized: true, // 如果你使用了图片，GitHub Pages 上的图片优化会导致一些问题
+    unoptimized: true,
   },
 };
 
