@@ -6,8 +6,8 @@ import {
   FolderGit2,
   GraduationCap,
   HomeIcon,
-  Mail,
-  MoreHorizontal,
+  // Mail,
+  // MoreHorizontal,
   User,
 } from 'lucide-react';
 
@@ -40,17 +40,16 @@ const dockItem = [
     icon: <FolderGit2 className="size-[20px]" />,
     href: '/projects',
   },
-
-  {
-    title: 'Contact us',
-    icon: <Mail className="size-[20px]" />,
-    href: '/contact',
-  },
-  {
-    title: 'More',
-    icon: <MoreHorizontal className="size-[20px]" />,
-    href: '/more',
-  },
+  // {
+  //   title: 'Contact us',
+  //   icon: <Mail className="size-[20px]" />,
+  //   href: '/contact',
+  // },
+  // {
+  //   title: 'More',
+  //   icon: <MoreHorizontal className="size-[20px]" />,
+  //   href: '/more',
+  // },
 ];
 
 const Navbar = () => {

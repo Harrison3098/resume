@@ -46,7 +46,7 @@ const ProjectCardItem = ({ title, desc, technologyStack }: Product) => {
 
 const SkillBadge = ({ text }: { text: string }) => {
   return (
-    <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800  ">
+    <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-teal-100 text-teal-800">
       {text}
     </span>
   );

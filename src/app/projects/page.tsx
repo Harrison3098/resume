@@ -42,7 +42,7 @@ const products = [
 
 const Page = () => {
   return (
-    <div className="space-y-4 w-full">
+    <div className="space-y-4 w-full max-h-full">
       <Badge icon={<Layers className="size-5" />} text="项目" />
       <H2Title>我的项目经验</H2Title>
 

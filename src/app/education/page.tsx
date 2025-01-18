@@ -22,7 +22,7 @@ const courses = [
 
 const Page = () => {
   return (
-    <div className="space-y-4 w-full">
+    <div className="space-y-4 w-full max-h-full">
       <Badge icon={<School className="size-5" />} text="教育背景" />
       <H2Title>我的求学历程</H2Title>
 
