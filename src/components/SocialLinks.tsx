@@ -32,7 +32,7 @@ const SocialLinks = () => {
         <Link
           key={name}
           href={link}
-          className="size-[40px] bg-[transparent] hover:bg-[#fff] rounded-md border-[1px] border-[#272B38] flex justify-center items-center"
+          className="size-10 bg-[transparent] hover:bg-[#fff] rounded-md border-2 border-[#272B38] flex justify-center items-center"
         >
           {icon}
         </Link>

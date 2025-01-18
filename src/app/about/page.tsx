@@ -1,11 +1,16 @@
 import AboutGrid from '@/components/AboutGrid';
+import H2Title from '@/components/H2Title';
 import { cn } from '@/lib/utils';
+import Badge from '@/ui/Badge';
 import { Dna, Globe2, School, User2, Heart, Circle } from 'lucide-react';
+
+const bornYear = 1999;
+const age = new Date().getFullYear() - bornYear;
 
 const items = [
   {
     name: '年龄',
-    answer: '26',
+    answer: age.toString(),
     icon: <Dna className="size-8" />,
   },
   {
@@ -19,21 +24,15 @@ const hobbies = ['麻将', '滑板', '电影', '电玩'];
 const introduce =
   '我是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个是一个';
 
-const page = () => {
+const Page = () => {
   return (
     <div className={cn('space-y-4 w-full')}>
-      <div className="size-fit py-1 px-2 bg-[#272B38] rounded-l-full rounded-r-full text-white flex space-x-2 justify-center items-center cursor-pointer hover:bg-[#292D3A]">
-        <User2 className="size-[20px]" />
-        <span>关于我</span>
-      </div>
-
-      <h2
-        className={cn(
-          'font-poppins text-primary font-bold text-4xl name_underline max-sm:text-2xl'
-        )}
-      >
+      <Badge icon={<User2 className="size-5" />} text="关于我" />
+      <H2Title>
         Web前端开发工程师
-      </h2>
+        <br />
+        拥有四年从业经验
+      </H2Title>
 
       <p className="w-full font-poppins text-xl text-primary max-sm:text-lg">
         {introduce}.
@@ -58,4 +57,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

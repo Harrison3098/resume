@@ -34,7 +34,7 @@ const DockIcon = ({
   return (
     <div
       className={cn(
-        'size-[40px] rounded-full bg-[#E5E7EB] flex justify-center items-center',
+        'size-12 rounded-full bg-[#E5E7EB] flex justify-center items-center',
         isActive && 'bg-gray-100 border border-[#e5e7eb] text-[#2f7df4]'
       )}
     >
